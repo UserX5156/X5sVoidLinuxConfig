@@ -1,0 +1,66 @@
+# X5 Void Linux Config
+
+## Void Linux Installation
+https://docs.voidlinux.org/installation/index.html
+
+## Void Linux Advanced Installation
+https://docs.voidlinux.org/installation/guides/index.html
+--Also do "sudo xbps-reconfigure -fa" in terminal
+
+## Xlibre Installation Guide
+https://github.com/X11Libre/xserver/wiki/Are-We-XLibre-Yet%3F
+https://github.com/xlibre-void/xlibre
+
+## The Software X5 Uses Fast Install
+sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour base-devel bat bluez bluetoothclt bluetui bluez-utils btop cargo cmake cmatrix cups cups-filters curl dunst efibootmgr fastfetch fd flameshot flatpak git grub htop i3 i3lock kdenlive krita lightdm lightdm-mini-greeter lsof lua mesa-vulkan-intel nerdfont NetworkManager nwg-look obs oracle-jre pavucontrol picom pulseaudio ranger rmpc rofi rust screenkey signal-desktop sof-firmware steam system-config-printer transmission ufw vis vlc xdg-desktop-portal xrandr xsel yggdrasil zig 7zip
+
+## Flatpak Apps
+*Flatseal
+*Minecraft Bedrock Launcher
+*Osu!
+*Pandora Launcher
+*Pix
+*PulseEffects
+*Sober
+
+## Manually
+*Monocraft: https://github.com/IdreesInc/Monocraft
+*OpenTabletDriver: https://github.com/OpenTabletDriver/OpenTabletDriver --What I did is move files with context clues by file paths in files and folder names and the file I use is tarball.  Aldo the DotNet can be searched ( https://dotnet.microsoft.com/en-us/download/dotnet ) too.
+*Hytale: https://hytale.com/
+
+
+
+
+
+
+# Need Help?
+Use https://docs.voidlinux.org
+
+## Summon Ranger Config Command
+ranger --copy-config=all
+--I change the keybind for "up, down, left, right" connected to "l, k, j, ;" in that order.  
+
+## Rofi in case in need
+rofi -dump-config > ~/.config/rofi/config.rasi
+
+## Quick Monitor Change
+xrandr --output <primary_output> --mode 1920x1080 --output <secondary_output> --mode 1920x1080 --right-of <primary_output>
+
+## A Way to fix Flatpak Apps
+add "export $(dbus-launch)" to /etc/profile
+
+## Flatpak Commands
+*flatpak override --filesystem=home com.example.App
+*flatpak run --socket=pulseaudio com.example.App
+
+## Text Editor Default
+add "export EDITOR=<YourEditor>" <enter> or <return> "export VISUAL=<YourEditor>"
+
+## Void Linux Enviroment for Other Users
+https://docs.voidlinux.org/config/graphical-session/kde.html
+
+
+
+
+
+
