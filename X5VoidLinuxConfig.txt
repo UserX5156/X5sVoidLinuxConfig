@@ -12,7 +12,7 @@ https://github.com/X11Libre/xserver/wiki/Are-We-XLibre-Yet%3F
 https://github.com/xlibre-void/xlibre
 
 ## The Software X5 Uses Fast Install
-sudo xbps-install -Sy void-repo-nonfree | sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour base-devel bat bluez bluetui btop cargo cava cmake cmatrix cups cups-filters curl dunst efibootmgr fastfetch fd firefox flameshot flatpak git grub htop i3 i3lock kdenlive krita lightdm lightdm-mini-greeter lsof lua mesa-vulkan-intel mpd nerd-fonts NetworkManager nwg-look obs oracle-jre pavucontrol picom pulseaudio ranger rmpc rofi rust screenkey Signal-Desktop sof-firmware steam system-config-printer transmission ufw vis vlc xdg-desktop-portal xrandr xsel yggdrasil zig 7zip
+sudo xbps-install -Sy void-repo-nonfree | sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour base-devel bat bluez bluetui btop cargo cava cmake cmatrix cups cups-filters curl dunst efibootmgr fastfetch fd firefox flameshot flatpak git grub htop i3 i3lock i3status-rust kdenlive krita lightdm lightdm-mini-greeter lsof lua mesa-vulkan-intel mpd nerd-fonts NetworkManager nwg-look obs oracle-jre pavucontrol picom pulseaudio ranger rmpc rofi rust screenkey Signal-Desktop sof-firmware steam system-config-printer transmission ufw vis vlc xdg-desktop-portal xrandr xsel yggdrasil zig 7zip
 
 ## Flatpak Apps
 *Flatseal
