@@ -25,7 +25,18 @@ sudo xbps-install -Sy void-repo-nonfree | sudo xbps-install -Syu alacritty alsa-
 
 ## Manually
 *Monocraft: https://github.com/IdreesInc/Monocraft
-*OpenTabletDriver: https://github.com/OpenTabletDriver/OpenTabletDriver --What I did is move files with context clues by file paths in files and folder names and the file I use is tarball.  Aldo the DotNet can be searched ( https://dotnet.microsoft.com/en-us/download/dotnet ) too.
+*OpenTabletDriver: https://github.com/OpenTabletDriver/OpenTabletDriver
+  *mkdir -p ./otd | tar zxvf <directory_of_tarball_file> -C ./otd
+rm <directory_of_tarball_file>
+cp ./otd/opentabletdriver/etc/udev/rules.d /etc/udev
+rm /usr/local/bin
+rm /usr/local/lib
+rm /usr/local/share
+cp ./otd/opentabletdriver/usr/local/bin /usr/local
+cp ./otd/opentabletdriver/usr/local/lib /usr/local
+cp ./otd/opentabletdriver/usr/local/share /usr/local
+rm ./otd
+  *Need .NET 8 Runtime: ( https://dotnet.microsoft.com/en-us/download/dotnet )
 *Hytale: https://hytale.com/
 
 
@@ -39,9 +50,6 @@ Use https://docs.voidlinux.org
 ## Summon Ranger Config Command
 ranger --copy-config=all
 --I change the keybind for "up, down, left, right" connected to "l, k, j, ;" in that order.  
-
-## Rofi in case in need
-rofi -dump-config > ~/.config/rofi/config.rasi
 
 ## Quick Monitor Change
 xrandr --output <primary_output> --mode 1920x1080 --output <secondary_output> --mode 1920x1080 --right-of <primary_output>
