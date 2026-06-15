@@ -48,9 +48,13 @@ rm ./otd
 # Need Help?
 Use https://docs.voidlinux.org
 
-## Summon Ranger Config Command
+## Ranger Config Dump
 ranger --copy-config=all
 --I change the keybind for "up, down, left, right" connected to "l, k, j, ;" in that order.  
+
+# Rofi Config Dump
+rofi -dump-config > ~/.config/rofi/config
+.rasi
 
 ## Quick Monitor Change
 xrandr --output <primary_output> --mode 1920x1080 --output <secondary_output> --mode 1920x1080 --right-of <primary_output>
