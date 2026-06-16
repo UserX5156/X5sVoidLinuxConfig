@@ -27,17 +27,18 @@ sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour ba
 ## Manually
 *Monocraft: https://github.com/IdreesInc/Monocraft
 *OpenTabletDriver: https://github.com/OpenTabletDriver/OpenTabletDriver
-  *mkdir -p ./otd | tar zxvf <directory_of_tarball_file> -C ./otd
+  *tar zxvf <directory_of_tarball_file> -C ./
 rm <directory_of_tarball_file>
-cp ./otd/opentabletdriver/etc/udev/rules.d /etc/udev
+cp ./opentabletdriver/etc/udev/rules.d /etc/udev
 rm /usr/local/bin
 rm /usr/local/lib
 rm /usr/local/share
-cp ./otd/opentabletdriver/usr/local/bin /usr/local
-cp ./otd/opentabletdriver/usr/local/lib /usr/local
-cp ./otd/opentabletdriver/usr/local/share /usr/local
-rm ./otd
+cp ./opentabletdriver/usr/local/bin /usr/local
+cp ./opentabletdriver/usr/local/lib /usr/local
+cp ./opentabletdriver/usr/local/share /usr/local
+rm ./opentabletdriver
   *Need .NET 8 Runtime: ( https://dotnet.microsoft.com/en-us/download/dotnet )
+  *I (Me) need: Gaomon Driver (https://download.gaomon.net/plus/list.php?cateId=12&type=Driver&system=linux&Keyword=&tid=9#pcb)...install it and then uninstall it
 *Hytale: https://hytale.com/
 
 
