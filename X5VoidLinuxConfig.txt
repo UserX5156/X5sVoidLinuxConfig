@@ -39,6 +39,7 @@ cp ./opentabletdriver/usr/local/share /usr/local
 rm ./opentabletdriver
   *Need .NET 8 Runtime: ( https://dotnet.microsoft.com/en-us/download/dotnet )
   *I (Me) need: Gaomon Driver (https://download.gaomon.net/plus/list.php?cateId=12&type=Driver&system=linux&Keyword=&tid=9#pcb)...install it and then uninstall it
+  *Btw see later what happens when install the wacom library or other driver to replace the Gaomon.
 *Hytale: https://hytale.com/
 
 
