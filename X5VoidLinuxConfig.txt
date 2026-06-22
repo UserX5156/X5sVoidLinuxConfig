@@ -1,20 +1,20 @@
-# X5 Void Linux Config
+[X5 Void Linux Config]
 
-## Void Linux Installation
+[Void Linux Installation]
 https://docs.voidlinux.org/installation/index.html
 
-## Void Linux Advanced Installation
+[Void Linux Advanced Installation]
 https://docs.voidlinux.org/installation/guides/index.html
 --Also do "sudo xbps-reconfigure -fa" in terminal
 
-## Xlibre Installation Guide
+[Xlibre Installation Guide]
 https://github.com/X11Libre/xserver/wiki/Are-We-XLibre-Yet%3F
 https://github.com/xlibre-void/xlibre
 
-## The Software X5 Uses Fast Install
+[The Software X5 Uses Fast Install]
 sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour base-devel bat bluez bluetui btop cargo cava cmake cmatrix cups cups-filters curl dunst efibootmgr fastfetch fd firefox flameshot flatpak git grub htop i3 i3lock i3status-rust kdenlive krita lightdm lightdm-mini-greeter lsof lua mesa-vulkan-intel mpd nerd-fonts NetworkManager nwg-look obs oracle-jre pavucontrol picom pulseaudio qt5ct qt6ct ranger rmpc rofi rust screenkey Signal-Desktop sof-firmware steam system-config-printer transmission ufw vis vlc xdg-desktop-portal xrandr xsel yggdrasil zig 7zip
 
-## Flatpak Apps
+[Flatpak Apps]
 *Flatseal
 *Minecraft Bedrock Launcher
 *Osu!
@@ -24,10 +24,14 @@ sudo xbps-install -Syu alacritty alsa-plugins-pulseaudio alsa-ucm-conf ardour ba
 *Sober
 *Steam
 
-## Manually
+[Theme]
+https://www.opendesktop.org/p/1929101/
+
+[Manually]
 *Monocraft: https://github.com/IdreesInc/Monocraft
 *OpenTabletDriver: https://github.com/OpenTabletDriver/OpenTabletDriver
-  *tar zxvf <directory_of_tarball_file> -C ./
+
+tar zxvf <directory_of_tarball_file> -C ./
 rm <directory_of_tarball_file>
 cp ./opentabletdriver/etc/udev/rules.d /etc/udev
 rm /usr/local/bin
@@ -37,41 +41,37 @@ cp ./opentabletdriver/usr/local/bin /usr/local
 cp ./opentabletdriver/usr/local/lib /usr/local
 cp ./opentabletdriver/usr/local/share /usr/local
 rm ./opentabletdriver
-  *Need .NET 8 Runtime: ( https://dotnet.microsoft.com/en-us/download/dotnet )
-  *I (Me) need: Gaomon Driver (https://download.gaomon.net/plus/list.php?cateId=12&type=Driver&system=linux&Keyword=&tid=9#pcb)...install it and then uninstall it
-  *Btw see later what happens when install the wacom library or other driver to replace the Gaomon.
+
+ *Need .NET 8 Runtime: ( https://dotnet.microsoft.com/en-us/download/dotnet )
+ *I (Me) need: Gaomon Driver (https://download.gaomon.net/plus/list.php?cateId=12&type=Driver&system=linux&Keyword=&tid=9#pcb)...install it and then uninstall it
+ *Note:If installing the Wacom library doesn't work, change this and use Gaemon.  
 *Hytale: https://hytale.com/
 
 
 
+[Need Help?]
+https://docs.voidlinux.org
 
-
-
-# Need Help?
-Use https://docs.voidlinux.org
-
-## Ranger Config Dump
+[Ranger Config Dump]
 ranger --copy-config=all
---I change the keybind for "up, down, left, right" connected to "l, k, j, ;" in that order.  
 
-# Rofi Config Dump
-rofi -dump-config > ~/.config/rofi/config
-.rasi
+[Rofi Config Dump]
+rofi -dump-config > ~/.config/rofi/config.rasi
 
-## Quick Monitor Change
+[Quick Monitor Change]
 xrandr --output <primary_output> --mode 1920x1080 --output <secondary_output> --mode 1920x1080 --right-of <primary_output>
 
-## A Way to fix Flatpak Apps
+[A Way to fix Flatpak Apps]
 add "export $(dbus-launch)" to /etc/profile
 
-## Flatpak Commands
+[Flatpak Commands]
 *flatpak override --filesystem=home com.example.App
 *flatpak run --socket=pulseaudio com.example.App
 
-## Text Editor Default
+[Text Editor Default]
 add "export EDITOR=<YourEditor>" <enter> or <return> "export VISUAL=<YourEditor>"
 
-## Void Linux Enviroment for Other Users
+[Void Linux Enviroment for Other Users]
 https://docs.voidlinux.org/config/graphical-session/kde.html
 
 
